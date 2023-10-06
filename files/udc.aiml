@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<aiml>
+
+  <!-- Define your chatbot's name and personality -->
+
+  <category>
+
+    <pattern>WHAT IS YOUR NAME</pattern>
+
+    <template>My name is ShopBot. I'm here to assist you with your shopping needs.</template>
+
+  </category>
+
+
+  <!-- Handle user queries about available products -->
+
+  <category>
+
+    <pattern>WHAT CAN I BUY</pattern>
+
+    <template>
+
+      <random>
+
+        <li>We offer a wide range of products, including electronics, clothing, home appliances, and more!</li>
+
+        <li>You can buy various items, such as smartphones, laptops, dresses, and kitchen appliances.</li>
+
+        <li>Feel free to ask about a specific category, and I'll help you find the best products.</li>
+
+      </random>
+
+    </template>
+
+  </category>
+
+
+  <!-- Handle user queries to find products by category -->
+
+  <category>
+
+    <pattern>TELL ME ABOUT ELECTRONICS SECTION</pattern>
+
+    <template>
+
+      <random>
+
+        <li>Let's find you some great electronics! Please specify the type of electronic product you're looking for.</li>
+
+        <li>Our electronics section includes smartphones, laptops, headphones, and more.</li>
+
+      </random>
+
+    </template>
+
+  </category>
+
+
+  <!-- Handle user queries about product availability -->
+
+  <category>
+
+    <pattern>IS THE FRIDGE IN STOCK</pattern>
+
+    <template>
+
+      <random>
+
+        <li>Product availability can vary. Could you please specify the brand and model of the FRIDGE you're interested in?</li>
+
+        <li>I'll check our inventory for the availability of FRIDGE once you provide more details.</li>
+
+      </random>
+
+    </template>
+
+  </category>
+
+
+  <!-- Handle user queries about help -->
+
+  <category>
+
+    <pattern>HELP</pattern>
+
+    <template>
+
+      <random>
+
+        <li>You can ask me about available products, find products by category, check product availability, or anything related to shopping. How can I assist you today?</li>
+
+        <li>Need help with your shopping? Just ask! I'm here to assist you with all your shopping needs.</li>
+
+      </random>
+
+    </template>
+
+  </category>
+
+
+  <!-- Handle generic greetings -->
+
+  <category>
+
+    <pattern>HELLO</pattern>
+
+    <template>
+
+      <random>
+
+        <li>Hello there! Ready to help you with your shopping needs.</li>
+
+        <li>Hi! Let's find the perfect products for you!</li>
+
+      </random>
+
+    </template>
+
+  </category>
+
+
+  <!-- Handle fallback responses -->
+
+  <category>
+
+    <pattern>*</pattern>
+
+    <template>
+
+      <random>
+
+        <li>I apologize, but I didn't quite catch that. Please rephrase your question or ask me something related to shopping.</li>
+
+        <li>Oops! It seems I missed that. Please try asking a shopping-related question, and I'll do my best to assist you.</li>
+
+      </random>
+
+    </template>
+
+  </category>
+
+</aiml>
